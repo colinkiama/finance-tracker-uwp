@@ -14,6 +14,27 @@ namespace FinanceTrackerLib.Model
         public TransactionType CurrentTransactionType { get; set; }
         private double BalanceBeforeTransaction;
 
+        public double BalanceAfterTransaction => CalculateBalanceAfterTransaction();
+
+        private double CalculateBalanceAfterTransaction()
+        {
+            double finalAmount;
+            switch (CurrentTransactionType)
+            {
+                case TransactionType.Income:
+                    finalAmount = BalanceBeforeTransaction + Amount;
+                    break;
+                case TransactionType.Expense:
+                    finalAmount = BalanceBeforeTransaction - Amount;
+                    break;
+                default:
+                    finalAmount = double.NaN;
+                    break;
+                
+            }
+
+            return finalAmount;
+        }
 
         public Transaction()
         {
