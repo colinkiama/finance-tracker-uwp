@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTrackerUWP", "Financ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTrackerUWPTest", "FinanceTrackerUWPTest\FinanceTrackerUWPTest.csproj", "{B1DE6104-B223-4F90-9747-5DD5F363C82A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTrackerLib", "FinanceTrackerLib\FinanceTrackerLib.csproj", "{E4289273-1611-4F16-88CE-07D34A9C7FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinanceTrackerLib", "FinanceTrackerLib\FinanceTrackerLib.csproj", "{E4289273-1611-4F16-88CE-07D34A9C7FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinanceTrackerLib.ViewModel", "FinanceTrackerLib.ViewModel\FinanceTrackerLib.ViewModel.csproj", "{5FE42B91-F3FA-478E-B50C-9CE9161D997A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,26 @@ Global
 		{E4289273-1611-4F16-88CE-07D34A9C7FAC}.Release|x64.Build.0 = Release|Any CPU
 		{E4289273-1611-4F16-88CE-07D34A9C7FAC}.Release|x86.ActiveCfg = Release|Any CPU
 		{E4289273-1611-4F16-88CE-07D34A9C7FAC}.Release|x86.Build.0 = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|ARM.Build.0 = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|x64.Build.0 = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Debug|x86.Build.0 = Debug|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|ARM.ActiveCfg = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|ARM.Build.0 = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|ARM64.Build.0 = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|x64.ActiveCfg = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|x64.Build.0 = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5FE42B91-F3FA-478E-B50C-9CE9161D997A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
