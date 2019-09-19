@@ -59,7 +59,7 @@ namespace FinanceTrackerUWP.Services
 
         }
 
-        public void DeleteAccountsAsync(IEnumerable<FinanceAccount> accountsToDelete, IDictionary<string, IEnumerable<Transaction>> transactionsToRemove)
+        public void DeleteTransactionsAsync(IEnumerable<FinanceAccount> accountsToDelete)
         {
             // Saves each list of transactions in parallel
             // to speed up things up. The transaction saving operations are mutually exclusive.
