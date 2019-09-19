@@ -9,8 +9,8 @@ namespace FinanceTrackerLib.Services
 {
     public interface IFileIOService
     {
-        Task<List<FinanceAccount>> LoadFinananceAccountsAsync();
-        Task<List<Transaction>> LoadTransactionsAsync(FinanceAccount accountToLoadFrom);
-        Task SaveTransactionsAsync(IEnumerable<FinanceAccount> accountsToSave, IDictionary<string, List<Transaction>> accountTransactions);
+        Task<IEnumerable<FinanceAccount>> LoadFinanceAccountsAsync();
+        Task<IEnumerable<Transaction>> LoadTransactionsAsync(FinanceAccount accountToLoadFrom);
+        Task SaveTransactionsAsync(IEnumerable<FinanceAccount> accountsToSave, IDictionary<string, IEnumerable<Transaction>> accountTransactions);
     }
 }
