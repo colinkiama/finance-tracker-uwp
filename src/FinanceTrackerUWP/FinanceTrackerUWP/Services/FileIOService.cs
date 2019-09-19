@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using FinanceTrackerLib.Model;
 using FinanceTrackerLib.Services;
 using Microsoft.Toolkit.Uwp.Helpers;
+using Windows.Storage;
 
 namespace FinanceTrackerUWP.Services
 {
@@ -13,6 +14,7 @@ namespace FinanceTrackerUWP.Services
     {
         LocalObjectStorageHelper _objectHelper = new LocalObjectStorageHelper();
 
+        
         // .fta = Finance Tracker Account
         // .ftt = Finance Tracker Transaction
 
@@ -55,6 +57,21 @@ namespace FinanceTrackerUWP.Services
 
             await _objectHelper.SaveFileAsync(AccountsFileName, accountsToSave);
 
+        }
+
+        public void DeleteAccountsAsync(IEnumerable<FinanceAccount> accountsToDelete, IDictionary<string, IEnumerable<Transaction>> transactionsToRemove)
+        {
+            // Saves each list of transactions in parallel
+            // to speed up things up. The transaction saving operations are mutually exclusive.
+            Parallel.ForEach(accountsToDelete, async (account) =>
+            {
+                string accountName = account.Name;
+                var transactionsFile = await ApplicationData.Current.LocalFolder.TryGetItemAsync($"{accountName}{AccountTransactionExtension}");
+                if (transactionsFile != null)
+                {
+                    await transactionsFile.DeleteAsync();
+                }
+            });
         }
     }
 }
