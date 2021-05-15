@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 using FinanceTrackerLib.Model;
 using FinanceTrackerLib.Services;
@@ -12,7 +13,8 @@ namespace FinanceTrackerUWP.Services
 {
     internal class FileIOService : IFileIOService
     {
-        LocalObjectStorageHelper _objectHelper = new LocalObjectStorageHelper();
+        
+        LocalObjectStorageHelper _objectHelper = new LocalObjectStorageHelper(null);
 
         
         // .fta = Finance Tracker Account
