@@ -157,13 +157,13 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FinanceTrackerLib.ViewModel\FinanceTrackerLib.ViewModel.csproj">
+      <Project>{5fe42b91-f3fa-478e-b50c-9ce9161d997a}</Project>
+      <Name>FinanceTrackerLib.ViewModel</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FinanceTrackerLib\FinanceTrackerLib.csproj">
       <Project>{e4289273-1611-4f16-88ce-07d34a9c7fac}</Project>
       <Name>FinanceTrackerLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\FinanceTrackerUWP\FinanceTrackerUWP.csproj">
-      <Project>{fdd16a14-48a4-41e5-b55e-6448e3523e7c}</Project>
-      <Name>FinanceTrackerUWP</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
